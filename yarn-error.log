@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add html-webpack-plugin--save-dev
+
+PATH: 
+  /home/samil/Документы/projects/webpack-start/node_modules/.bin:/home/samil/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/html-webpack-plugin--save-dev: Not found
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140749:22)
+      at Request.emit (node:events:376:20)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141721:10)
+      at Request.emit (node:events:376:20)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (node:events:482:28)
+      at IncomingMessage.emit (node:events:388:22)
+      at endReadableNT (node:internal/streams/readable:1294:12)
+      at processTicksAndRejections (node:internal/process/task_queues:80:21)
+
+npm manifest: 
+  {
+    "name": "webpack-start",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "cross-env NODE_ENV=development webpack --mode development",
+      "build": "cross-env NODE_ENV=production webpack --mode production"
+    },
+    "author": "Nikita Budantsev",
+    "license": "ISC",
+    "devDependencies": {
+      "cross-env": "^7.0.3",
+      "path": "^0.12.7",
+      "webpack": "^5.11.0",
+      "webpack-cli": "^4.2.0",
+      "webpack-serve": "^3.2.0"
+    },
+    "dependencies": {
+      "normalize.css": "^8.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
